@@ -4,30 +4,20 @@
     scroll-behavior: smooth;
     font-family: arial;
 }
-
 main{
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     height: 100vh;
 }
 section{
-    flex: 1 1 50%;
+    flex-grow: 1;
 }
 .menu{
     display: flex;
     flex-flow: row wrap;
+    height: 100vh;
 
 }
-.menu .quadrado{
-    flex: 1 1 100%;
-    font-size: 2em;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-}
-.quadrado:not(:first-child) .retangulo:hover,
-.quadrado:first-child .retangulo:nth-child(2):hover,
-.quadrado:first-child .retangulo:first-child{
+.retangulo:not(:nth-child(-n+2)):hover, .retangulo:first-child{
     background-color: black;
     color: white;
 }
@@ -44,13 +34,13 @@ section{
     color: #000;
 }
 .retangulo p{
-    margin-left: 20px;
+    margin: 0 15px 0 15px;
 }
-.quadrado:first-child .retangulo:first-child{
+.retangulo:first-child{
     font-weight: bold;
     font-size: 1.2em;
 }
-.quadrado:nth-child(2) .retangulo:nth-child(1){
+.retangulo:nth-child(2){
     font-size: 0.7em;
 }
 .quadrado:nth-child(2) .retangulo:nth-child(1):hover{
@@ -74,14 +64,37 @@ article{
     align-items: center;
     justify-content: center;
 }
-
+.botao{
+    padding: 5px 20px 5px 20px;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    text-decoration: none;
+    transform:rotate(-90deg) ;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.botao:hover{
+    background-color: #000;
+    color: #fff;
+}
 
 @media only screen and (min-width: 768px){
     main{
+        display: flex;
         flex-flow: row nowrap;
     }
     .menu .quadrado{
         flex: 1 1 48%;
         flex-flow: column wrap;
+    }
+    section{
+        flex: 1 1 50%;
+    }
+    .retangulo p{
+        font-size: 2em;
     }
 }
