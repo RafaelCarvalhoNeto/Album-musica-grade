@@ -67,7 +67,8 @@ section{
     overflow: auto;
 }
 .content div{
-    margin: 30px;
+    margin: 15px;
+    font-size: 0.9em;
 }
 article{
     height: 100vh;
@@ -77,6 +78,7 @@ article{
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 .botao{
     padding: 5px 20px 5px 20px;
@@ -96,11 +98,16 @@ article{
 }
 
 .coluna{
+    font-size: 0.9em;
+    text-align: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    height: 70%;
+    width: 92%;
 }
-.coluna pre{
-    flex: 1 1 auto;
+.coluna p{
+    margin: 0 0px 20px 5px;
+    width: 50%;
 }
 pre{
     margin-right: 100px;
@@ -123,5 +130,9 @@ pre{
     }
     .botao{
         display: none;
+    }
+    .content div{
+        margin: 30px;
+        font-size: 1em;
     }
 }
