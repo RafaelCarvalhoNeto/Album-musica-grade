@@ -95,6 +95,18 @@ article{
     color: #fff;
 }
 
+.coluna{
+    display: flex;
+    flex-flow: row wrap;
+}
+.coluna pre{
+    flex: 1 1 auto;
+}
+pre{
+    margin-right: 100px;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px){
     main{
         display: flex;
