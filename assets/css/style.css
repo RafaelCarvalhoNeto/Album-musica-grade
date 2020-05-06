@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: arial;
+    font-family: 'Jost';
+
 }
 main{
     flex-flow: column nowrap;
@@ -15,11 +16,16 @@ section{
     display: flex;
     flex-flow: row wrap;
     height: 100vh;
+    width: 100vw;
 
 }
-.retangulo:not(:nth-child(-n+2)):hover, .retangulo:first-child{
+.retangulo:not(:nth-child(-n+2)):hover, .retangulo:first-child, .miniquad:hover{
     background-color: black;
     color: white;
+}
+.retangulo:nth-last-child(2):hover, .retangulo:last-child:hover{
+    background-color: white;
+    color: #000;
 }
 .retangulo{
     display: block;
@@ -43,10 +49,17 @@ section{
 .retangulo:nth-child(2){
     font-size: 0.7em;
 }
-.quadrado:nth-child(2) .retangulo:nth-child(1):hover{
-    color: #000;
-    background-color: #fff;
+.miniquad{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
 }
+.miniquad:first-child{
+    border-right: 1px solid #000;
+}
+
 .content{
     /*display: flex;
     flex-flow: column nowrap;
@@ -63,19 +76,19 @@ article{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .botao{
     padding: 5px 20px 5px 20px;
     color: #000;
     background-color: #fff;
     position: absolute;
-    right: -10px;
-    top: 50%;
+    bottom: 0;
     text-decoration: none;
-    transform:rotate(-90deg) ;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    text-align: center;
 }
 .botao:hover{
     background-color: #000;
@@ -87,14 +100,16 @@ article{
         display: flex;
         flex-flow: row nowrap;
     }
-    .menu .quadrado{
-        flex: 1 1 48%;
-        flex-flow: column wrap;
-    }
     section{
         flex: 1 1 50%;
     }
     .retangulo p{
         font-size: 2em;
+    }
+    .retangulo .miniquad p{
+        font-size: 1em;
+    }
+    .botao{
+        display: none;
     }
 }
