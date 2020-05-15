@@ -51,7 +51,7 @@ section{
     color: white;
 }
 .retangulo:nth-child(2){
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 .miniquad{
     height: 100%;
@@ -89,8 +89,8 @@ section{
     font-size: 0.9em;
 }
 article{
-    height: 100vh;
     border-bottom: 1px solid #000;
+    padding-bottom: 30px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -116,18 +116,13 @@ article{
 }
 
 .coluna{
-    font-size: 0.9em;
     text-align: center;
     display: flex;
-    flex-flow: column wrap;
-    height: 88%;
-    width: 92%;
+    flex-flow: column;
 
 }
 .coluna p{
     margin: 0 0px 10px 5px;
-    width: 50%;
-    font-size: 0.9em;
 }
 pre{
     text-align: center;
@@ -137,6 +132,7 @@ pre{
     background-image: url("../img/Capa-Meio.jpg");
     background-size: cover;
     background-position-x: -95px;
+    height: 100vh;
 }
 iframe{
     width:300px;
@@ -168,6 +164,8 @@ iframe{
     .coluna{
         height: 70%;
         font-size: 0.9em;
+        width: 92%;
+        flex-flow: column wrap;
     }
     #conteudo0{
         background-position-x: 0;
@@ -175,5 +173,13 @@ iframe{
     iframe{
         width:500px;
         height:500px;
+    }
+    article{
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    .coluna p{
+        width: 50%;
+        font-size: 0.9em;
     }
 }
