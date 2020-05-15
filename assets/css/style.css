@@ -79,9 +79,6 @@ section{
 }
 
 .content{
-    /*display: flex;
-    flex-flow: column nowrap;
-    align-items: center;*/
     overflow: auto;
 }
 .content div{
@@ -97,6 +94,7 @@ article{
     justify-content: center;
     position: relative;
     text-align: center;
+    min-height: 100vh;
 }
 .botao{
     padding: 5px 20px 5px 20px;
