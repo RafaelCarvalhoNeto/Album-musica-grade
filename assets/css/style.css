@@ -115,6 +115,16 @@ pre{
     text-align: center;
 }
 
+#conteudo0{
+    background-image: url("../img/Capa-Meio.jpg");
+    background-size: cover;
+    background-position-x: -95px;
+}
+iframe{
+    width:300px;
+    height:300px;
+}
+
 @media only screen and (min-width: 768px){
     main{
         display: flex;
@@ -139,4 +149,12 @@ pre{
     .coluna{
         height: 70%;
         font-size: 0.9em;
+    }
+    #conteudo0{
+        background-position-x: 0;
+    }
+    iframe{
+        width:500px;
+        height:500px;
+    }
 }
