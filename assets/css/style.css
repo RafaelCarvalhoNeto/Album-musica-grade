@@ -46,11 +46,8 @@ section{
     font-weight: bold;
     font-size: 1.2em;
 }
-.retangulo:last-child:hover{
-    background-color: rgb(0, 120, 246);
-    color: white;
-}
-.retangulo:nth-child(2){
+
+.retangulo:nth-child(2), .retangulo:last-child{
     font-size: 0.9em;
 }
 .miniquad{
@@ -60,20 +57,29 @@ section{
     align-items: center;
     flex: 1 1 auto;
     text-decoration: none;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #000;
 }
 .miniquad:first-child{
     border-right: 1px solid #000;
 }
-.miniquad:nth-last-child(2):hover{
+.retangulo:nth-last-child(2) .miniquad:nth-last-child(2):hover{
     background-color: rgb(100, 186, 107);
     color: white;
 }
-.miniquad:nth-last-child(1):hover{
+.retangulo:nth-last-child(2) .miniquad:nth-last-child(1):hover{
     background-color: rgb(251, 0, 18);
     color: white;
 }
+.retangulo:nth-last-child(1) .miniquad:nth-last-child(2):hover{
+    background-color: rgb(0, 120, 246);
+    color: white;
+}
+.retangulo:nth-last-child(1) .miniquad:nth-last-child(1):hover{
+    background-color: rgb(246, 78, 0);
+    color: white;
+}
+
 .miniquad p{
     margin: 0;
 }
