@@ -8,7 +8,10 @@
 
 ## Design `Mobile`
 
-<p align="around">
+<p align="center">
   <img src="https://github.com/RafaelCarvalhoNeto/layout-grade/blob/master/assets/img/layout-cel.PNG" width="300" title="hover text">
-  <img src="https://github.com/RafaelCarvalhoNeto/layout-grade/blob/master/assets/img/layout-cel1.PNG" width="300" title="hover text">
+</p>
+<br>
+<p align="center">
+   <img src="https://github.com/RafaelCarvalhoNeto/layout-grade/blob/master/assets/img/layout-cel1.PNG" width="300" title="hover text">
 </p>
