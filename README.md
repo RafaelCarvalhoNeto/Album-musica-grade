@@ -1,5 +1,9 @@
 # Layout-Grade
 
+## Sobre
+
+Projeto feito em HTML e CSS utilizando Flexbox para montar a estrutura de navegação das páginas.
+
 ## Design `PC`
 
 <p align="center">
